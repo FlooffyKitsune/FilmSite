@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     background-color: #96c0e6;
-}
-body {
-    margin: 1rem;
-    padding: 1rem;
 }
 h1 {
     position:absolute;
     top:-10000px;
 }
-img {
+body {
+    margin: 5rem;
+    padding: 1.5rem;
+}
+.heading {
+    position: relative;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+.logo {
     max-width: 100%;
     padding-bottom: 8px;
     height: auto;
@@ -21,30 +29,91 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+img {
+    max-width: 100%;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 2rem;
+}
+.item {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.item p {
+    padding-bottom: 2rem;
+}
 h2 {
     border-bottom: solid black 2px;
-    padding-top: 1rem;
+    font-family: 'Cutive', serif;
+    font-weight: bold;
 }
-p {
-    padding: 10px 7px;
-}
-.heading {
-    position: relative;
-    
-    padding-bottom: 2rem;
-    align-items: center;
+.spartans {
+    width: 150%;
 }
 ul li {
     padding: 0;
-    list-style-type: none;
     font-style: italic;
+}
+.info {
+    padding-top: 5rem;
+    font-size: 1rem;
+}
+.container-flex {
+    display: flex;
+}
+.item-flex {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    text-align: center;
 }
 footer {
     padding: 0;
+    padding-top: 1rem;
     font-style: italic;
     border-top: solid gray 1px;
-    color: white;
+    color: gray;
     text-align: center;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1300px){
+    body {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    h2 {
+        padding-top: 1rem;
+    }
+    img {
+        padding-bottom: 8px;
+        height: auto;
+        display:block;
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        display: contents;
+    }
+    p {
+        padding: 10px 7px;
+    }
+    .info {
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 320px){
@@ -54,5 +123,16 @@ footer {
     }
     footer p {
         padding: 0;
+    }
+    .container-flex {
+        display: contents;
+    }
+    .item-flex {
+        max-width: 100%;
+        height: auto;
+        display:contents;
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 5px;
     }
 }
